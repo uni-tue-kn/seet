@@ -1,0 +1,18 @@
+[package]
+name = "controller"
+version = "0.1.0"
+authors = ["Steffen Lindner"]
+edition = "2021"
+license = "Apache-2.0"
+description = "Control plane for SEET based multicast forwarding."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rbfrt = { git = "https://github.com/uni-tue-kn/rbfrt"}
+log = "0.4"
+env_logger = "0.10.0"
+thiserror = "1.0.50"
+tokio = { version = "1.20.1", features = ["rt-multi-thread"]}
+macaddr = "1.0.1"
+
